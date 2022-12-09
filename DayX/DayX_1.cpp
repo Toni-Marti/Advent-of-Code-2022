@@ -3,7 +3,7 @@ ENUNCIADO
 */
 
 // Compilar con:
-// g++ DayX_1.cpp -o Day_1.exe
+// g++ DayX_1.cpp -o DayX_1.bin
 
 #include <iostream>
 #include <fstream>
