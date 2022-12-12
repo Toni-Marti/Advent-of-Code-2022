@@ -1,8 +1,8 @@
 /*
-ENUNCIADO
+STATEMENT
 */
 
-// Compilar con:
+// Compile with:
 // g++ DayX_1.cpp -o DayX_1.bin
 
 #include <iostream>
@@ -11,21 +11,21 @@ ENUNCIADO
 using namespace std;
 
 int main(int argc, char *argv[]){
-	ifstream arch_entrada;
-	string ruta_arch = "Entrada.txt";
+	ifstream input_file;
+	string file_path = "Input.txt";
 	
 	if(argc > 2) {
-		cerr << "ERROR: Demasiados argumentos." << endl;
+		cerr << "ERROR: Too many arguments." << endl;
 		return -1;
 	}
 	else if( argc == 2) {
-		ruta_arch = argv[1];
+		file_path = argv[1];
 	}
 	
-	arch_entrada.open(ruta_arch);
+	input_file.open(file_path);
 	
-	if(!arch_entrada.is_open()) {
-		cerr << "ERROR: No se pudo abrir el archivo: " << ruta_arch << endl;
+	if(!input_file.is_open()) {
+		cerr << "ERROR: Coudn't open the file: " << file_path << endl;
 		return -2;
 	}
 	
